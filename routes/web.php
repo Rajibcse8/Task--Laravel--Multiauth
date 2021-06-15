@@ -20,10 +20,21 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/dashboard',function(){
-   return view('dashboard');
+
+// Route::get('/dashboard',function(){
+//    return view('dashboard');
+// });
+
+Route::group(['middleware'=>['auth']] ,function(){
+
+    Route::get('/dashboard',function(){
+        return view('template.home');
+     });
+    
+     Route::get('adduser', 'AdduserController@create');
+    
+
 });
 
-Route::get('/test',function(){
-    return view('template.home');
- });
+
+ 
