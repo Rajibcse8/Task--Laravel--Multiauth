@@ -27,12 +27,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware'=>['auth']] ,function(){
 
+    Route::get('logout','HomeController@logout')->name('logout');
+
     Route::get('/dashboard',function(){
         return view('template.home');
      });
     
      Route::get('adduser', 'AdduserController@create');
-    
+   
+     
 
 });
 
