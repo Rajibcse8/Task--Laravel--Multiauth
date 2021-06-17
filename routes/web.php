@@ -34,6 +34,7 @@ Route::group(['middleware'=>['auth']] ,function(){
      });
     
      Route::get('adduser', 'AdduserController@create');
+     Route::post('adduser', 'AdduserController@store')->name('adduser.store');
    
      
 
