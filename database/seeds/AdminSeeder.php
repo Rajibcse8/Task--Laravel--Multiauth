@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 use App\User;
 
 class AdminSeeder extends Seeder
@@ -15,7 +16,7 @@ class AdminSeeder extends Seeder
         User::create([
             'name'=>'Myadmin',
             'email'=>'admin@gmail.com',
-           
+            'password'=>Hash::make('12345678'),
             'role_id'=>'1'
         ]);
     }

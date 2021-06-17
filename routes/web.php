@@ -25,7 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //    return view('dashboard');
 // });
 
-Route::group(['middleware'=>['auth']] ,function(){
+Route::group(['middleware'=>['auth',]] ,function(){
 
     Route::get('logout','HomeController@logout')->name('logout');
 

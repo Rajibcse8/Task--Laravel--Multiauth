@@ -13,17 +13,17 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Role::create([
-           'name'=>'admin'
-        ]);
-        Role::create([
-            'name'=>'merchant'
-        ]);
-        Role::create([
-            'name'=>'officer'
-        ]);
-        Role::create([
-            'name'=>'user'
-        ]);
+            'name'=>'admin'
+         ]);
+         Role::create([
+             'name'=>'merchant'
+         ]);
+         Role::create([
+             'name'=>'officer'
+         ]);
+         Role::create([
+             'name'=>'user'
+         ]);
 
         // $this->call(UserSeeder::class);
     }
