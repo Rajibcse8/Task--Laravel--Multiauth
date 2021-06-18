@@ -17,28 +17,28 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+//Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Route::get('/dashboard',function(){
-//    return view('dashboard');
-// });
 
-Route::group(['middleware'=>['auth',]] ,function(){
+ Route::get('/demo',function(){
+    return view('dashboard');
+ });
+
+Route::group(['middleware'=>['auth']] ,function(){
 
     Route::get('logout','HomeController@logout')->name('logout');
 
-    Route::get('/dashboard',function(){
-        return view('template.home');
-     });
+    Route::get('/dashboard','AdduserController@index');
     
      Route::get('adduser', 'AdduserController@create');
-     Route::post('adduser', 'AdduserController@store')->name('adduser.store');
-   
-     
+     Route::post('adduser', 'AdduserController@store')->name('adduser.store');   
 
 });
+
+Route::get('try','AdduserController@try');
 
 
  

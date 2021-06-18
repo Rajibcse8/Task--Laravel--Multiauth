@@ -9,6 +9,19 @@ use Auth;
 
 class AdduserController extends Controller
 {
+
+    public function index(){
+        if(Auth::user()->role_id==4){
+            return  view('home');
+        }
+
+        $data['admin'] = count(User::Where('role_id',1)->get() );
+        $data['merchant'] = count(User::Where('role_id',2)->get() );
+        $data['officer'] = count(User::Where('role_id',3)->get() );
+        $data['user'] = count(User::Where('role_id',4)->get() );
+       
+        return view('template.home',compact('data'));
+    }
    
     public function create(){
 
@@ -81,6 +94,10 @@ class AdduserController extends Controller
            $data['password'] = bcrypt($req->password);
            User::create($data);
          
+    }
+
+    public function try(){
+        dd(Auth::user()->name);
     }
 
 }

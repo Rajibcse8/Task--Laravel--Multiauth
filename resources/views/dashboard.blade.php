@@ -788,7 +788,12 @@
                                         </div><!-- .nk-block-head-content -->
                                     </div><!-- .nk-block-between -->
                                 </div><!-- .nk-block-head -->
+                              
+                              
                                 <div class="nk-block">
+
+
+
                                     <div class="row g-gs">
                                         <div class="col-xxl-3 col-sm-6">
                                             <div class="card">
@@ -878,6 +883,11 @@
                                                 </div><!-- .nk-ecwg -->
                                             </div><!-- .card -->
                                         </div><!-- .col -->
+
+
+                                        
+
+
                                         <div class="col-xxl-6">
                                             <div class="card card-full">
                                                 <div class="nk-ecwg nk-ecwg8 h-100">
@@ -1233,6 +1243,10 @@
                                         </div><!-- .col -->
                                     </div><!-- .row -->
                                 </div><!-- .nk-block -->
+
+
+
+
                             </div>
                         </div>
                     </div>

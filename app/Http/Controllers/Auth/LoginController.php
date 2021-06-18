@@ -30,7 +30,7 @@ class LoginController extends Controller
 
     protected function redirectTo()
     {
-        if (auth()->user()) {
+        if (auth()->user()->role_id !=4) {
             return  '/dashboard';
         }
         
