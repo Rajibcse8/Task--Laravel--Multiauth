@@ -21,24 +21,25 @@ Route::get('/', function () {
 Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('logout','HomeController@logout')->name('logout');
 
 
- Route::get('/demo',function(){
-    return view('dashboard');
- });
+
 
 Route::group(['middleware'=>['auth','preventUser']] ,function(){
 
-    Route::get('logout','HomeController@logout')->name('logout');
-
-    Route::get('/dashboard','AdduserController@index');
     
+     Route::get('/dashboard','AdduserController@index');  
      Route::get('adduser', 'AdduserController@create');
      Route::post('adduser', 'AdduserController@store')->name('adduser.store');   
 
 });
 
-Route::get('try','AdduserController@try');
+//  Route::get('/demo',function(){
+//     return view('dashboard');
+//  });
+
+
 
 
  

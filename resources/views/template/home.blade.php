@@ -3,7 +3,6 @@
     <div class="nk-block">
 
 
-
         <div class="row g-gs">
             <div class="col-xxl-3 col-sm-6">
                 <div class="card">
@@ -32,7 +31,7 @@
                         <div class="card-inner">
                             <div class="card-title-group">
                                 <div class="card-title">
-                                    <h6 class="title">Today Number of  Mechant</h6>
+                                    <h6 class="title">Total Number of  Mechant</h6>
                                 </div>
                             </div>
                             <div class="data">
@@ -51,7 +50,7 @@
                         <div class="card-inner">
                             <div class="card-title-group">
                                 <div class="card-title">
-                                    <h6 class="title">Today Officer</h6>
+                                    <h6 class="title">Total Number of Officer</h6>
                                 </div>
                             </div>
                             <div class="data">
@@ -71,7 +70,7 @@
                         <div class="card-inner">
                             <div class="card-title-group">
                                 <div class="card-title">
-                                    <h6 class="title">Today User</h6>
+                                    <h6 class="title">Total Number of User</h6>
                                 </div>
                             </div>
                             <div class="data">

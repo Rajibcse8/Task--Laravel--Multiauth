@@ -96,9 +96,7 @@ class AdduserController extends Controller
          
     }
 
-    public function try(){
-        dd(Auth::user()->name);
-    }
+  
 
 }
 

@@ -24,7 +24,7 @@
             <div class="nk-sidebar nk-sidebar-fixed is-light " data-content="sidebarMenu">
                 <div class="nk-sidebar-element nk-sidebar-head">
                     <div class="nk-sidebar-brand">
-                        <a href="html/index.html" class="logo-link nk-sidebar-logo">
+                        <a href="{{ url('dashboard') }}" class="logo-link nk-sidebar-logo">
                             <img class="logo-light logo-img" src="{{ asset('template/images/logo.png') }}" srcset="{{ asset('template/images/logo2x.png') }}" alt="logo">
                             <img class="logo-dark logo-img" src="{{ asset('template/images/logo-dark.png') }}" srcset="{{ asset('template/images/logo-dark2x.png') }} " alt="logo-dark">
                         </a>
